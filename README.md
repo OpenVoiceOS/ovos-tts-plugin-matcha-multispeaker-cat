@@ -1,6 +1,11 @@
 # OVOS TTS Plugin - matxa-multispeaker-cat
 
-🍵 Catalan [Matxa-TTS](https://huggingface.co/projecte-aina/matxa-tts-cat-multispeaker) is based on matxa-TTS that is an encoder-decoder architecture designed for fast acoustic modelling in TTS. The encoder part is based on a text encoder and a phoneme duration prediction that together predict averaged acoustic features. And the decoder has essentially a U-Net backbone inspired by Grad-TTS, which is based on the Transformer architecture. In the latter, by replacing 2D CNNs by 1D CNNs, a large reduction in memory consumption and fast synthesis is achieved.
+🍵 [Matxa-TTS](https://huggingface.co/projecte-aina/matxa-tts-cat-multispeaker), the multispeaker, multidialectal neural TTS model.  It works together with the vocoder model 🥑 [alVoCat](https://huggingface.co/projecte-aina/alvocat-vocos-22khz), to generate high quality and expressive speech efficiently in four Catalan dialects:
+
+    Balear
+    Central
+    North-Occidental
+    Valencian
 
 ## Install
 
@@ -57,6 +62,8 @@ tts.get_tts(sent, "test.wav", voice="valencia/gina")
 
 
 ## Credits
+
+Both models are trained with open data; 🍵 Matxa models are free (as in freedom) to use for non-comercial purposes, but for commercial purposes it needs licensing from the voice artist.
 
 ![img.png](img.png)
 > This work is funded by the Ministerio para la Transformación Digital y de la Función Pública and Plan de Recuperación, Transformación y Resiliencia - Funded by EU – NextGenerationEU within the framework of the project ILENIA with reference 2022/TL22/00215337
