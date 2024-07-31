@@ -9,7 +9,7 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 def get_version():
     """ Find the version of the package"""
     version = None
-    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_matcha_multispeaker_cat', 'version.py')
+    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_matxa_multispeaker_cat', 'version.py')
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
         for line in f:
@@ -50,17 +50,17 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-matcha-multispeaker-cat = ovos_tts_plugin_matcha_multispeaker_cat:MatchaCatalanTTSPlugin'
+PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-matxa-multispeaker-cat = ovos_tts_plugin_matxa_multispeaker_cat:matxaCatalanTTSPlugin'
 
 setup(
-    name='ovos-tts-plugin-matcha-multispeaker-cat',
+    name='ovos-tts-plugin-matxa-multispeaker-cat',
     version=get_version(),
     description='mimic tts plugin for OpenVoiceOS',
     url='https://github.com/OpenVoiceOS/:T',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['ovos_tts_plugin_matcha_multispeaker_cat'],
+    packages=['ovos_tts_plugin_matxa_multispeaker_cat'],
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[

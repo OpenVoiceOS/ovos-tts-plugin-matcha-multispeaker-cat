@@ -1,4 +1,4 @@
-from ovos_tts_plugin_matcha_multispeaker_cat import cleaners
+from ovos_tts_plugin_matxa_multispeaker_cat import cleaners
 
 _pad = "_"
 _punctuation = ';:,.!?¡¿—…"«»“” '

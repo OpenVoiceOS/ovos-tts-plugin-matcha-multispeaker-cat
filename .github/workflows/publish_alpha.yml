@@ -6,7 +6,7 @@ on:
     branches:
       - dev
     paths-ignore:
-      - 'ovos_tts_plugin_matcha_multispeaker_cat/version.py'
+      - 'ovos_tts_plugin_matxa_multispeaker_cat/version.py'
       - 'test/**'
       - 'examples/**'
       - '.github/**'

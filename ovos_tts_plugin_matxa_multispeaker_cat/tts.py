@@ -6,7 +6,7 @@ import soundfile as sf
 from scipy.fft import irfft
 from scipy.signal.windows import hann
 
-from ovos_tts_plugin_matcha_multispeaker_cat.text import text_to_sequence, sequence_to_text
+from ovos_tts_plugin_matxa_multispeaker_cat.text import text_to_sequence, sequence_to_text
 
 DEFAULT_SPEAKER_ID = "quim"
 DEFAULT_ACCENT = "balear"
@@ -154,7 +154,7 @@ def vocos_inference(mel, denoise, model_vocos, config=None):
 
 def get_tts(text: str,
             output_file: str,
-            model_matcha_mel: onnxruntime.InferenceSession,
+            model_matxa_mel: onnxruntime.InferenceSession,
             model_vocos: onnxruntime.InferenceSession,
             accent: str = DEFAULT_ACCENT,
             spk_name: str = DEFAULT_SPEAKER_ID,
@@ -171,20 +171,20 @@ def get_tts(text: str,
         denoise = True
         spk_id = speaker_id_dict[accent][spk_name]
         sid = np.array([int(spk_id)]) if spk_id is not None else None
-        text_matcha, text_lengths = process_text(0, text, cleaner=cleaners[accent])
+        text_matxa, text_lengths = process_text(0, text, cleaner=cleaners[accent])
 
-        # MATCHA VOCOS
+        # matxa VOCOS
         inputs = {
-            "x": text_matcha,
+            "x": text_matxa,
             "x_lengths": text_lengths,
             "scales": np.array([temperature, length_scale], dtype=np.float32),
             "spks": sid
         }
         mel_t0 = perf_counter()
-        # matcha mel inference
-        mel, mel_lengths = model_matcha_mel.run(None, inputs)
+        # matxa mel inference
+        mel, mel_lengths = model_matxa_mel.run(None, inputs)
         mel_infer_secs = perf_counter() - mel_t0
-        print("Matcha Mel inference time", mel_infer_secs)
+        print("matxa Mel inference time", mel_infer_secs)
 
         vocos_t0 = perf_counter()
         # vocos inference
@@ -194,8 +194,8 @@ def get_tts(text: str,
         vocos_infer_secs = perf_counter() - vocos_t0
         print("Vocos inference time", vocos_infer_secs)
 
-        with open(output_file, "wb") as fp_matcha_vocos:
+        with open(output_file, "wb") as fp_matxa_vocos:
             sf.write(output_file, wavs_vocos.squeeze(0), 22050, "PCM_24")
 
-        print(f"RTF matcha + vocos {(mel_infer_secs + vocos_infer_secs) / (wavs_vocos.shape[1] / 22050)}")
+        print(f"RTF matxa + vocos {(mel_infer_secs + vocos_infer_secs) / (wavs_vocos.shape[1] / 22050)}")
         return output_file
