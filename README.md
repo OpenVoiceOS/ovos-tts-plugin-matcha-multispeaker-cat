@@ -1,6 +1,6 @@
 # OVOS TTS Plugin - matxa-multispeaker-cat
 
-🍵 [Matxa-TTS](https://huggingface.co/projecte-aina/matxa-tts-cat-multispeaker), the multispeaker, multidialectal neural TTS model.  It works together with the vocoder model 🥑 [alVoCat](https://huggingface.co/projecte-aina/alvocat-vocos-22khz), to generate high quality and expressive speech efficiently in four Catalan dialects:
+🍵 [Matxa-TTS](hhttps://huggingface.co/projecte-aina/matxa-tts-cat-multiaccent), the multispeaker, multidialectal neural TTS model.  It works together with the vocoder model 🥑 [alVoCat](https://huggingface.co/projecte-aina/alvocat-vocos-22khz), to generate high quality and expressive speech efficiently in four Catalan dialects:
 
     Balear
     Central
