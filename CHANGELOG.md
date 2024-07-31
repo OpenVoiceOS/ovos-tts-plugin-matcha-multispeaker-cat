@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.0.1a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/V0.0.1a5) (2024-07-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/V0.0.1a4...V0.0.1a5)
+
 ## [V0.0.1a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/V0.0.1a4) (2024-07-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/V0.0.1a3...V0.0.1a4)
