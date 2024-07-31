@@ -61,6 +61,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_matxa_multispeaker_cat'],
+    include_package_data=True,
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[
