@@ -50,7 +50,7 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-matxa-multispeaker-cat = ovos_tts_plugin_matxa_multispeaker_cat:matxaCatalanTTSPlugin'
+PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-matxa-multispeaker-cat = ovos_tts_plugin_matxa_multispeaker_cat:MatxaCatalanTTSPlugin'
 
 setup(
     name='ovos-tts-plugin-matxa-multispeaker-cat',

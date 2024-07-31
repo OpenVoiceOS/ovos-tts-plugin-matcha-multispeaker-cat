@@ -48,10 +48,10 @@ if voice is not set it will default to a male voice based on the language code
 ## Standalone usage
 
 ```python
-from ovos_tts_plugin_matxa_multispeaker_cat import matxaCatalanTTSPlugin
+from ovos_tts_plugin_matxa_multispeaker_cat import MatxaCatalanTTSPlugin
 
 sent = "Això és una prova de síntesi de veu."
-tts = matxaCatalanTTSPlugin()
+tts = MatxaCatalanTTSPlugin()
 tts.get_tts(sent, "test.wav", voice="valencia/gina")
 ```
 

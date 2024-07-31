@@ -1,1 +1,6 @@
 ovos-plugin-manager>=0.0.5
+onnxruntime
+phonemizer
+scipy
+soundfile
+pyyaml

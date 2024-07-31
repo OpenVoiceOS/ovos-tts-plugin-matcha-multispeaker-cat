@@ -8,11 +8,11 @@ from phonemizer.backend import EspeakBackend
 from ovos_tts_plugin_matxa_multispeaker_cat.tts import get_tts, DEFAULT_ACCENT, DEFAULT_SPEAKER_ID
 
 
-class matxaCatalanTTSPlugin(TTS):
+class MatxaCatalanTTSPlugin(TTS):
     """Interface to matxaCatalanTTSPlugin."""
 
     def __init__(self, lang="ca-es", config=None):
-        super(matxaCatalanTTSPlugin, self).__init__(lang=lang, config=config, audio_ext='wav')
+        super(MatxaCatalanTTSPlugin, self).__init__(lang=lang, config=config, audio_ext='wav')
         bin_file = self.config.get("espeak_bin", "/usr/local/lib/libespeak-ng.so")
         if not os.path.isfile(bin_file):
             raise FileNotFoundError("please follow instructions to install the catalan espeak fork\n"
@@ -25,7 +25,7 @@ class matxaCatalanTTSPlugin(TTS):
                                     "the file '/usr/local/lib/libespeak-ng.so' should be created if the install succeeds")
         EspeakBackend.set_library(bin_file)
 
-        MODEL_PATH_matxa_MEL_ALL = f"{os.path.dirname(__file__)}/matxa_multispeaker_cat_all_opset_15_10_steps.onnx"
+        MODEL_PATH_matxa_MEL_ALL = f"{os.path.dirname(__file__)}/matcha_multispeaker_cat_all_opset_15_10_steps.onnx"
         MODEL_PATH_VOCOS = f"{os.path.dirname(__file__)}/mel_spec_22khz_cat.onnx"
         VOCODER_CONFIG_PATH = f"{os.path.dirname(__file__)}/config.yaml"
 
@@ -88,5 +88,5 @@ class matxaCatalanTTSPlugin(TTS):
 
 if __name__ == "__main__":
     sent = "Això és una prova de síntesi de veu."
-    t = matxaCatalanTTSPlugin()
+    t = MatxaCatalanTTSPlugin()
     t.get_tts(sent, "test.wav", voice="valencia/gina")
