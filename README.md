@@ -9,16 +9,7 @@
 
 ## Install
 
-install espeak with catalan phonemizer support, a binary should be placed at `/usr/local/lib/libespeak-ng.so`
-
-```bash
-git clone https://github.com/projecte-aina/espeak-ng
-cd ./espeak-ng
-./autogen.sh
-./configure
-make
-sudo make install
-```
+> **NOTE**: you need latest version of espeak-ng for proper [catalan support](https://github.com/espeak-ng/espeak-ng/pull/1681), depending on your distro package versions you might need to compile it from source
 
 the plugin can be installed with pip
 
