@@ -13,18 +13,6 @@ class MatxaCatalanTTSPlugin(TTS):
 
     def __init__(self, lang="ca-es", config=None):
         super(MatxaCatalanTTSPlugin, self).__init__(lang=lang, config=config, audio_ext='wav')
-        bin_file = self.config.get("espeak_bin", "/usr/local/lib/libespeak-ng.so")
-        if not os.path.isfile(bin_file):
-            raise FileNotFoundError("please follow instructions to install the catalan espeak fork\n"
-                                    "   git clone https://github.com/projecte-aina/espeak-ng\n"
-                                    "   cd ./espeak-ng\n"
-                                    "   ./autogen.sh\n"
-                                    "   ./configure\n"
-                                    "   make\n"
-                                    "   sudo make install\n"
-                                    "the file '/usr/local/lib/libespeak-ng.so' should be created if the install succeeds")
-        EspeakBackend.set_library(bin_file)
-
         MODEL_PATH_matxa_MEL_ALL = f"{os.path.dirname(__file__)}/matcha_multispeaker_cat_all_opset_15_10_steps.onnx"
         MODEL_PATH_VOCOS = f"{os.path.dirname(__file__)}/mel_spec_22khz_cat.onnx"
         VOCODER_CONFIG_PATH = f"{os.path.dirname(__file__)}/config.yaml"
