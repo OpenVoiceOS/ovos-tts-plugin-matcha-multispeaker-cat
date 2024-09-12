@@ -1,12 +1,20 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/HEAD)
+## [0.0.1a8](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/0.0.1a8) (2024-09-12)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/V0.0.1a6...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/V0.0.1a7...0.0.1a8)
 
 **Closed issues:**
 
 - use upstream espeak [\#1](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/issues/1)
+
+**Merged pull requests:**
+
+- feat:semver [\#3](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/pull/3) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.1a7](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/V0.0.1a7) (2024-08-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/V0.0.1a6...V0.0.1a7)
 
 **Merged pull requests:**
 
