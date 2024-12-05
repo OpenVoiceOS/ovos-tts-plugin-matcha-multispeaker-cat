@@ -9,10 +9,17 @@ hyperparameter. Some cleaners are English-specific. You'll typically want to use
      the symbols in symbols.py to match your data).
 """
 import logging
+import os.path
 import re
 
 from phonemizer import phonemize
 from phonemizer.backend import EspeakBackend
+
+
+# sometimes the plugin doesn't seem to find it without this
+if os.path.isfile("/usr/local/lib/libespeak-ng.so"):
+    EspeakBackend.set_library("/usr/local/lib/libespeak-ng.so")
+
 
 # To avoid excessive logging we set the log level of the phonemizer package to Critical
 critical_logger = logging.getLogger("phonemizer")
