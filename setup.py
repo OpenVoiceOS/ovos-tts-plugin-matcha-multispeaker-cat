@@ -55,13 +55,14 @@ PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-matxa-multispeaker-cat = ovos_tts_plugin_m
 setup(
     name='ovos-tts-plugin-matxa-multispeaker-cat',
     version=get_version(),
-    description='mimic tts plugin for OpenVoiceOS',
-    url='https://github.com/OpenVoiceOS/:T',
+    description='matxa tts plugin for OpenVoiceOS',
+    url='https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_matxa_multispeaker_cat'],
     include_package_data=True,
+    package_data={'': package_files('ovos_tts_plugin_matxa_multispeaker_cat')},
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[
