@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.0.2a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/0.0.2a1) (2024-12-05)
+## [0.0.3a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/tree/0.0.3a1) (2024-12-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/0.0.1...0.0.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/compare/0.0.2...0.0.3a1)
 
 **Merged pull requests:**
 
-- fix:espeak\_shared\_lib [\#4](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/pull/4) ([JarbasAl](https://github.com/JarbasAl))
+- fix:init kwargs [\#6](https://github.com/OpenVoiceOS/ovos-tts-plugin-matxa-multispeaker-cat/pull/6) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
